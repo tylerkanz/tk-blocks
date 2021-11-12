@@ -4,9 +4,10 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../../../node_modules/bootstrap/scss/bootstrap";
 
 .wp-block-tk-blocks-hero {
 	background-color: #21759b;
 	color: #fff;
-	padding: 2px;
 }

@@ -31,11 +31,15 @@ import './editor.scss';
  */
 export default function Edit() {
 	return (
-		<p { ...useBlockProps() }>
-			{ __(
-				'Multiple Blocks Plugin – hello from the editor!',
-				'tk-blocks'
-			) }
-		</p>
+		<div {...useBlockProps()}>
+			{__(
+				<div class="row p-4">
+					<div class="col-lg-6">
+						<h1>Title</h1>
+						<h3>Subtitle</h3>
+					</div>
+				</div>
+			)}
+		</div>
 	);
 }

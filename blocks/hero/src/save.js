@@ -12,7 +12,7 @@ import { __ } from '@wordpress/i18n';
  * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
  */
 import { useBlockProps } from '@wordpress/block-editor';
-
+import { getBlockAttributes } from '@wordpress/blocks';
 /**
  * The save function defines the way in which the different attributes should
  * be combined into the final markup, which is then serialized by the block
@@ -24,11 +24,15 @@ import { useBlockProps } from '@wordpress/block-editor';
  */
 export default function save() {
 	return (
-		<p { ...useBlockProps.save() }>
-			{ __(
-				'Multiple Blocks Plugin – hello from the saved content!',
-				'tk-blocks'
-			) }
-		</p>
+		<div {...useBlockProps.save()}>
+			{__(
+				<div class="row p-4">
+					<div class="col-lg-6">
+						<h1></h1>
+						<h3>Subtitle</h3>
+					</div>
+				</div>
+			)}
+		</div>
 	);
 }

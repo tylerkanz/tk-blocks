@@ -9,6 +9,23 @@
 	"supports": {
 		"html": false
 	},
+	"attributes": {
+		"title": {
+			"type": "string"
+		},
+		"subtitle": {
+			"type": "string"
+		},
+		"background-image": { 
+			"type": "string"
+		},
+		"button-1": { 
+			"type": "string"
+		},
+		"button-2": { 
+			"type": "string"
+		}
+	},
 	"textdomain": "tk-blocks",
 	"editorScript": "file:./build/index.js",
 	"editorStyle": "file:./build/index.css",
